@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- Toda página web tem as tags html(define a página), head(coisas carregadas antes de ser exibida para o usuário), body-->
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title mostra o nome da pagina -->
+    <title>Página Inicial</title>
+</head>
+<!-- O que fato aparece para o usuário-->
+<body>
+    Meu Primeiro HTML
+        <!-- style = atributo que aplicada css diretamente no HTML-->
+        <i style="color: aqua;">Itálico</i>
+        <!-- class = para padronização de um fromato pré-definido-->
+        <i class="titulo-principal">Itálico</i>
+        <!-- Atributos todas as tags podem ter-->
+         <!-- id = identificador, que é utilizado pelo javascript-->
+        <strong id="Titulo">Forte/Negrito</strong>
+        <!-- Input é uma tag que não possui fechamento pois cria um campo, o type pode ser string(text), numero(number), color(seletor)-->
+         <input type="text">
+         <img with="10px" src="https://cdn-icons-png.flaticon.com/256/174/174854.png" alt="É uma tag que não tem fechamento">
+        <!-- Tags específicas para texto -> Tipografia HTML -->
+        <!-- Tag u = underline-->
+        <!-- Tag mark = marca o texto -->
+        <h1>DIO.me</h1>
+        <h2>Implemente seu futuro global agora!</h2>
+        <p>Domine as <strong><u>tecnologias<sup>*</sup></u></strong> utilizadas pelas empresas <mark>mais inovadoras do mundo</mark>e encare seu novo desafio profissional, evoluindo em comunidade com os melhores experts.</p>
+        <!-- Citação -->
+        <blockquote>
+            <i>O jeito DIO._ para vocÊ ganhar destaque mais rápido no mercado</i>
+        </blockquote>
+        <h2>Aprenda tecnologias emergentes</h2>
+        <p>Os nossos cursos e programas de formatação são criados em conjunto com especialistas das empresas mais inovadoras do mundo, aplicando uma metodologia para que você domine as tecnologias utilizadas no mercado e também mergulhe nas novas e mais atuais tecnologias que impactarão o futuro dos negócios digitais.</p>
+        <!-- Listas -->
+        <!-- ol = Listas Ordenada -->
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>
+                <!-- Utilizados para menus -->
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ul>
+            </li>
+            <li>
+                <ol>
+                    <li>Item 4.1</li>
+                    <li>Item 4.2</li>
+                    <li>Item 4.3</li>
+                </ol>
+            </li>
+        </ol>
+        <!-- Links -->
+        <!-- target _top e _parent foram utilizados para retrocompatibilidade(versões anteriores - FRAMES(subdivisões de frames))-->
+        <a href="http://dio.me" target="_blank">Digital Innovation One</a>
+        <!--_self = abre nele mesmo/ _blank = abre uma nova aba-->
+        <!-- title = tooltip(texto dentro de um balão) -->
+        <br>
+        <a href="about.html" title="Clique aqui e confira" target="_self">Sobre a navegabilidade de páginas</a> 
+</body>

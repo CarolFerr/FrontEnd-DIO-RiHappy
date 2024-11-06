@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <ul>
+        <li>
+            <a href="about.html">Voltar para a outra página</a>
+        </li>
+    </ul> 
+    <h1>Pizza Order</h1>
+    <!-- Os dados apareceram no campo da url -->
+    <form method="get">
+        <h3>Voce selecionou: Pizza de Calabresa</h3>
+        <input type="checkbox" name="opcional[]" value="quiejo"> + queijo<br>
+        <input type="checkbox" name="opcional[]" value="calabres"> + calabresa<br>
+        <input type="checkbox" name="opcional[]" value="cebola"> + cebola<br>
+        <input type="checkbox" name="opcional[]" value="azeitona"> + azeitona<br>
+
+        <p>Borda Recheada?</p>
+        <!-- o name no input com radio deve ser igual, pois se estiver vazio os dois serão marcados-->
+        <input type="radio" name="borda" value="sim">Sim<br>
+        <input type="radio" name="borda" value="nao">Não<br>
+        
+        <button type="submit">Enviar pedido</button>
+
+    </form>
+    <form onsubmit="" method="get">
+        <label>Nome:</label><input type="text" name="name"><br>
+        <label>Cargo:</label>
+        <select name="role" multiple>
+            <option value="">Selecione o cargo</option>
+            <option value="administrativo">Administrativo</option>
+            <option value="gerente">Gerente</option>
+            <option value="diretor">Diretor</option>
+            <option value="presidente">Presidente</option>  
+        </select>
+        <br>
+        <label>Assunto:</label><input type="text" name="subject"><br>
+
+
+        <button type="submit">Enviar</button>
+
+    </form>
+</body>
+</html>
+
