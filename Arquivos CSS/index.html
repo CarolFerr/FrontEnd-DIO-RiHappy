@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*div + p {
+            color: violet;
+        }*/
+        div ~ p {
+            color: rgb(0, 136, 255);
+        }
+        .fundo-verde ~ p {
+            background: rgb(105, 34, 204);
+        }
+        .fundo-amarelo p + p {
+            background: rgb(237, 115, 115);
+        }
+        #current-color {
+            color: rgb(27, 114, 85);
+            border: 2px solid currentcolor;
+        }
+
+        #object-fit {
+            width: 200px;
+            height: 300px;
+            border: 5px solid #ab1212;
+        }
+
+        #contain {
+            object-fit: contain;
+        }
+
+        #cover {
+            object-fit: cover;
+        }
+
+        #none {
+            object-fit: none;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        p {
+            text-decoration-line: underline ;
+            text-decoration-style: wavy ;
+            text-decoration-color: #ab1212 ;
+            text-decoration-thickness: 2px;
+        }
+      </style>
+</head>
+<body>
+    <ul>
+        <li id="current-color">Palavra-chave "currentcolor"</li>
+    </ul>
+
+    <div class="fundo-verde">
+        <p>Paragrafo 1 dentro da div</p>
+        <p>Paragrafo 2 dentro da div</p>
+    
+        <span>
+            <p>Paragrafo 3 dentro da div e span</p>
+        </span>
+    </div>
+
+    <p>Paragrafo 4 fora da div</p>
+    <p>Paragrafo 5 fora da div</p>
+
+    <div class="fundo-verde">
+        <p>Paragrafo 6 dentro da div</p>
+        <p>Paragrafo 7 dentro da div</p>
+    
+        <span>
+            <p>Paragrafo 8 dentro da div e span</p>
+        </span>
+    </div>
+
+    <p>Paragrafo 9 fora da div</p>
+    <p>Paragrafo 10 fora da div</p>
+
+    <div class="fundo-vermelho">
+        <p>Paragrafo 11 dentro da div</p>
+        <p>Paragrafo 12 dentro da div</p>
+    
+        <span>
+            <p>Paragrafo 13 dentro da div e span</p>
+        </span>
+    </div>
+
+    <p>Paragrafo 14 fora da div</p>
+    <p>Paragrafo 15 fora da div</p>
+
+    <!--Varios seletores e combinadores juntos-->
+    <div class="fundo-amarelo">
+        <p>Elemento 01</p>
+        <p>Elemento 02</p>
+        <span>
+            <p>Elemento 03</p>
+            <p>Elemento 04</p>
+        </span>
+        <p>Elemento 05</p>
+        <p>Elemento 06</p>
+    </div>
+
+    <!--Posicionamento de Imagens: OBJECT-FIT-->
+    <h1>Propriedade <code>object-fit</code></h1>
+    <code>object-fit: fill;</code>(padrão)
+    <div id="object-fit">
+        <img src="Captura de tela 2024-11-15 133419.png" alt="" id="fill">
+    </div>
+    <br>
+    <code>object-fit: contain;</code>
+    <div id="object-fit">
+        <img src="Captura de tela 2024-11-15 133419.png" alt="" id="contain">
+    </div>
+    <br>
+    <code>object-fit: cover;</code>
+    <div id="object-fit">
+        <img src="Captura de tela 2024-11-15 133419.png" alt="" id="cover">
+    </div>
+    <br>
+    <code>object-fit: none;</code>
+    <div id="object-fit">
+        <img src="Captura de tela 2024-11-15 133419.png" alt="" id="none">
+    </div>
+    
+    <br>
+    <code>object-fit: scale-down;</code>
+    <div id="object-fit">
+        <img src="Captura de tela 2024-11-15 133419.png" alt="" id="scale-down">
+    </div>
+    <!--Posicionamento de Imagens: OBJECT-POSITION->
+
+</body>
+</html>
